@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body >
+  <h1 class="heading">To Do Card</h1>
+
+    <div class="flex justify-center items-center">
+          <form class="flex gap-[10px] todo-form">
+            <input required type="text" class="input-text w-[500px] h-[50px] rounded-md pl-[20px] text-[#494949] outline-none border border-black-500" placeholder="Enter Word...">
+            <button type="submit" class="input-submit bubbly-button w-[100px] h-[50px] rounded-md">Add</button>
+          </form>
+        </div>
+    </div>
+
+    <ul class="mx-auto btn-wrapper p-6 w-[610px] rounded-md bg-white flex items-center justify-around">
+      <button class="all-btn w-[80px] additional rounded-md h-[50px]">All (<span></span>)</button>
+      <button class="all-complated-btn w-[140px] additional rounded-md h-[50px]">Complated (<span></span>)</button>
+      <button class="all-uncomplated-btn w-[170px] additional rounded-md h-[50px]">UnComplated (<span></span>)</button>
+      <!-- <button class="group relative m-1 cursor-pointer overflow-hidden rounded-md border-2 border-pink-500 px-5 py-3 font-mono font-semibold">
+        <span class="ease absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-pink-500 transition-all duration-300 group-hover:h-64 group-hover:-translate-y-32"></span>
+        <span class="ease relative text-pink-500 transition duration-300 group-hover:text-white">Button Text</span>
+    </button> -->
+    </ul>
+
+    <ul class="list mx-auto p-5 w-[610px] rounded-md bg-white"></ul>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
